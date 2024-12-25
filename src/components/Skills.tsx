@@ -4,6 +4,8 @@ import { FaCode, FaPython } from "react-icons/fa";
 import { SiReact, SiNextdotjs, SiMongodb, SiGithub } from "react-icons/si";
 import { Radar } from "react-chartjs-2";
 import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend } from "chart.js";
+import { ChartOptions } from 'chart.js';
+
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
@@ -21,7 +23,7 @@ const Skills = () => {
     ],
   };
 
-  const Options = {
+  const Options: ChartOptions<"radar"> = {
     scales: {
       r: {
         suggestedMin: 50,
@@ -37,7 +39,7 @@ const Skills = () => {
     plugins: {
       legend: {
         display: true,
-        position: "top",
+        position: "top", // Must be an allowed value
       },
     },
   };
