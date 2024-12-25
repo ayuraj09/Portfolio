@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import React from "react";
-import { FaCode, FaDatabase, FaCloud, FaPython } from "react-icons/fa";
-import { SiJavascript, SiReact, SiNextdotjs, SiMongodb, SiGithub } from "react-icons/si";
+import { FaCode, FaPython } from "react-icons/fa";
+import { SiReact, SiNextdotjs, SiMongodb, SiGithub } from "react-icons/si";
 import { Radar } from "react-chartjs-2";
 import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend } from "chart.js";
 
@@ -21,7 +21,7 @@ const Skills = () => {
     ],
   };
 
-  const options = {
+  const Options = {
     scales: {
       r: {
         suggestedMin: 50,
@@ -87,8 +87,8 @@ const Skills = () => {
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Proficiency Overview
             </h3>
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
-              <Radar data={data} options={options} />
+            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md ">
+              <Radar data={data} options={Options} />
             </div>
           </div>
         </div>

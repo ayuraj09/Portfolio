@@ -9,7 +9,7 @@ const Contact = () => {
                     Connect with me!!
                 </h2>
                 <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-                    Let's collaborate to make something big!!
+                    Let us collaborate to make something big!!
                 </p>
                 <form action="https://formsubmit.co/ayushr21@iitk.ac.in" method="POST" className="space-y-8">
                     <div>

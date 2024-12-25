@@ -8,7 +8,8 @@ const About = () => {
           About Me
         </h2>
         <p className="text-center text-gray-600 dark:text-gray-400 text-lg mb-12">
-        A tech enthusiast with a passion for software development(SDE), data science. I enjoy solving real-world problems through innovative software solutions and data-driven insights.</p>
+          A tech enthusiast with a passion for software development(SDE), data science. I enjoy solving real-world problems through innovative software solutions and data-driven insights.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
@@ -42,7 +43,7 @@ const About = () => {
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">
                   - Developed a responsive, user-friendly website using Next.js and MongoDB.<br />
-                  - Deployed the app with CI/CD pipelines, improving the company's online presence and user engagement.
+                  - Deployed the app with CI/CD pipelines, improving the company&apos;s online presence and user engagement.
                 </p>
               </li>
             </ul>

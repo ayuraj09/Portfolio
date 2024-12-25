@@ -60,6 +60,7 @@
 "use client";
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import Image from 'next/image'; 
 
 const Hero = () => {
   return (
@@ -81,7 +82,7 @@ const Hero = () => {
             <div className="w-16 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
             <p className="mb-8 leading-relaxed text-gray-500 dark:text-gray-400">
               Passionate developer with a love for building impactful digital solutions. 
-              Let's innovate together and bring ideas to life!
+              Let&apos;s innovate together and bring ideas to life!
             </p>
             <div className="flex justify-center">
               <a
@@ -93,27 +94,28 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex justify-center items-center">
-          <div className="relative w-64 h-64 md:w-80 md:h-80">
-            {/* Outline wrapper */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-1">
-              <div className="relative w-full h-full rounded-full bg-white dark:bg-gray-900">
-                {/* Image */}
-                <img
-                  src="/Assets/Self.jpeg"
-                  alt="hero"
-                  className="w-full h-full object-cover rounded-full shadow-lg transition duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl"
-                />
+            <div className="relative w-64 h-64 md:w-80 md:h-80">
+              {/* Outline wrapper */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-1">
+                <div className="relative w-full h-full rounded-full bg-white dark:bg-gray-900">
+                  {/* Optimized Image using next/image */}
+                  <Image
+                    src="/Assets/Self.jpeg"
+                    alt="hero"
+                    width={320} // Adjust dimensions as needed
+                    height={320}
+                    className="w-full h-full object-cover rounded-full shadow-lg transition duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl"
+                  />
+                </div>
+              </div>
+
+              {/* Gradient overlay for hover effect */}
+              <div className="absolute inset-0 bg-gradient-to-t from-indigo-900 via-transparent to-transparent rounded-full opacity-0 hover:opacity-80 transition duration-500">
+                <div className="absolute bottom-6 w-full text-center text-white font-semibold text-lg">
+                  Ayush Raj
+                </div>
               </div>
             </div>
-
-            {/* Gradient overlay for hover effect */}
-            <div className="absolute inset-0 bg-gradient-to-t from-indigo-900 via-transparent to-transparent rounded-full opacity-0 hover:opacity-80 transition duration-500">
-              <div className="absolute bottom-6 w-full text-center text-white font-semibold text-lg">
-                Ayush Raj
-              </div>
-            </div>
-          </div>
-
           </div>
         </div>
       </section>
